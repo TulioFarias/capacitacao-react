@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, ContainerList, ContainerPersonagens} from './style'
+import {Container, ContainerList, ContainerPersonagens, } from './style'
 
 
 
@@ -10,6 +10,8 @@ function ContainerListing({list}){
     return (
        
         <Container>
+
+            
         <ContainerList>
         
            {list && 
@@ -33,6 +35,7 @@ function ContainerListing({list}){
                 </ContainerPersonagens>
            ))}
         </ContainerList>
+
         
         </Container>
        

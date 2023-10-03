@@ -2,7 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
 background: linear-gradient(71deg, rgba(0,0,0,1) 76%, rgba(2,17,0,1) 95%);
+
 `
+
+
 
 export const ContainerList = styled.div`
         display: grid;
@@ -11,8 +14,9 @@ export const ContainerList = styled.div`
         grid-template-columns: 20% 20% 20% 20%;
         margin-top: 20px;
         gap: 20px;
-        max-height: max-content;
         width: 100vw;
+        min-height: 51vh;
+        
 
 `
 
