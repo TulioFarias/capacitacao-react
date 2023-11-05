@@ -35,7 +35,6 @@ function SearchRickAndMorty(){
     }, [list, inputValue]);
 
 
-    console.log(inputValue)
     
     
 
