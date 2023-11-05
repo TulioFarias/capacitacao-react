@@ -4,16 +4,17 @@ import RickMorty from '../../assets/rickMorty.gif'
 
 
 
-function Header({inputValue,onInputChange}){
+function Header({onInputChange, inputValue}){
+
 
     return (
         <Container>
         <HeaderContainer/>
         <ContainerItens>
-            <Imagem src={RickMorty} />
+            <Imagem src={RickMorty}/>
             <h3>Rick and Morty</h3>
             <label>Pesquise os personagens aqui:</label>
-            <input type="text" value={inputValue} onChange={(event) =>{ onInputChange(event.target.value)}}/>
+            <input type="text" value={inputValue} onChange={(event) => { onInputChange(event.target.value)}}/>
             <hr></hr>
    
         </ContainerItens>

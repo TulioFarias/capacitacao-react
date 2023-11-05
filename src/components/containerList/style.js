@@ -21,7 +21,7 @@ export const ContainerList = styled.div`
 `
 
 export const ContainerPersonagens = styled.div`
-        width: max-content;
+        width: 330px;
         border-radius: 10px;
         box-shadow: rgba(204,204,204,1)0px 3px 8px;
         padding: 10px;
@@ -41,13 +41,11 @@ export const ContainerPersonagens = styled.div`
                 padding-left: 2px;
                 color: #d0d0d0;
                 font-size: 18px;
+                
+                
         }
 
-        label{
-                padding-left: 2px;
-                color: #d0d0d0;
-                font-size: 18px;
-        }
+       
 
         
 

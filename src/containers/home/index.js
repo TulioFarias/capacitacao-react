@@ -10,6 +10,7 @@ function SearchRickAndMorty(){
     const [list, setList] = useState([]);
     const [filteredList, setFilteredList] = useState([]);
     const [inputValue, setInputValue] = useState('');
+
   
     useEffect(() => {
       async function loadList() {
@@ -22,13 +23,21 @@ function SearchRickAndMorty(){
   
     useEffect(() => {
       if (inputValue) {
-        const filtered = list.filter((personagem) => personagem.name.includes(inputValue));
+      
+        const filtered = list.filter((personagem) =>
+        personagem.name.toLowerCase().includes(inputValue.toLowerCase())
+      );
+
         setFilteredList(filtered);
       } else {
         setFilteredList(list);
       }
     }, [list, inputValue]);
-  
+
+
+    console.log(inputValue)
+    
+    
 
     return (
        
